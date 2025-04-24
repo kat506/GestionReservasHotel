@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#880E4F</color>
+    <color name="colorPrimaryDark">#F48FB1</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- Colores personalizados para la app -->
+    <color name="colorBackground">#F5F5F5</color>
+    <color name="colorTextPrimary">#333333</color>
+    <color name="colorTextSecondary">#666666</color>
+
+    <!-- Colores para los diferentes tipos de reservas -->
+    <color name="colorHotel">#880E4F</color>
+    <color name="colorCabana">#880E4F</color>
+    <color name="colorGlamping">#880E4F</color>
+    <color name="colorEstandar">#880E4F</color>
+
+    <!-- Colores para los botones -->
+    <color name="colorButtonNormal">#F48FB1</color>
+    <color name="colorButtonPressed">#F48FB1</color>
+</resources>

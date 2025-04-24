@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+    <LinearLayout
+        android:id="@+id/layoutItemBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tvTipoReserva"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tipo de Reserva"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:background="@color/colorPrimary"
+            android:padding="4dp"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tvCodigo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Código: 12345"
+            style="@style/TitleTextStyle" />
+
+        <TextView
+            android:id="@+id/tvCliente"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cliente: Juan Pérez"
+            style="@style/SubtitleTextStyle" />
+
+        <TextView
+            android:id="@+id/tvFechas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Del 01/01/2023 al 05/01/2023"
+            style="@style/SubtitleTextStyle" />
+
+        <TextView
+            android:id="@+id/tvPrecio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Precio: $500.00"
+            android:textStyle="bold"
+            style="@style/SubtitleTextStyle" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

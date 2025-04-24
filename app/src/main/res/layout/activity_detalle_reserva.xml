@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tvTituloDetalle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Detalles de la Reserva"
+            style="@style/TitleTextStyle"
+            android:gravity="center"
+            android:padding="8dp"
+            android:layout_marginBottom="16dp" />
+
+        <LinearLayout
+            android:id="@+id/layoutTipoReserva"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:id="@+id/tvTipoReservaDetalle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Hotel"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:padding="8dp"
+                android:background="@color/colorHotel" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvCodigoDetalle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Código: 12345"
+            style="@style/TitleTextStyle"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tvClienteDetalle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cliente: Juan Pérez"
+            style="@style/SubtitleTextStyle"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tvFechasDetalle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fechas: Del 01/01/2023 al 05/01/2023"
+            style="@style/SubtitleTextStyle"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tvPrecioDetalle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Precio Total: $500.00"
+            style="@style/SubtitleTextStyle"
+            android:layout_marginBottom="16dp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorTextSecondary"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Características Especiales"
+            style="@style/TitleTextStyle"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Características específicas de cada tipo de reserva -->
+        <LinearLayout
+            android:id="@+id/layoutCaracteristicasHotel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tvTipoHabitacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tipo de Habitación: Suite"
+                style="@style/SubtitleTextStyle"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/tvDesayuno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Desayuno: Incluido"
+                style="@style/SubtitleTextStyle"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/tvHuespedes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Número de Huéspedes: 2"
+                style="@style/SubtitleTextStyle" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutCaracteristicasCabana"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tvMetrosCuadrados"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Metros Cuadrados: 75 m²"
+                style="@style/SubtitleTextStyle"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/tvChimenea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Chimenea: Sí"
+                style="@style/SubtitleTextStyle"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/tvCapacidad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Capacidad Máxima: 4 personas"
+                style="@style/SubtitleTextStyle" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layoutCaracteristicasGlamping"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tvMetrosCuadradosGlamping"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Metros Cuadrados: 50 m²"
+                style="@style/SubtitleTextStyle"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/tvChimeneaGlamping"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Chimenea: No"
+                style="@style/SubtitleTextStyle"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/tvCapacidadGlamping"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Capacidad Máxima: 2 personas"
+                style="@style/SubtitleTextStyle"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:id="@+id/tvTipoExperiencia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tipo de Experiencia: Aventura"
+                style="@style/SubtitleTextStyle"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Actividades Incluidas:"
+                style="@style/SubtitleTextStyle"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/tvActividades"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="- Senderismo\n- Observación de estrellas\n- Yoga"
+                style="@style/SubtitleTextStyle" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

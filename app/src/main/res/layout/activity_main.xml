@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/colorBackground">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sistema de Reservas de Hospedaje"
+        style="@style/TitleTextStyle"
+        android:gravity="center"
+        android:layout_marginBottom="32dp" />
+
+    <Button
+        android:id="@+id/btnVerReservas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ver Todas las Reservas"
+        style="@style/ButtonStyle"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/btnVerHoteles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ver Reservas de Hotel"
+        style="@style/ButtonStyle"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/btnVerCabanas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ver Reservas de Cabañas"
+        style="@style/ButtonStyle"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/btnVerGlamping"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ver Reservas de Glamping"
+        style="@style/ButtonStyle" />
+
+</LinearLayout>
